@@ -1,101 +1,50 @@
+"use client"
 import Image from "next/image";
+import Typewriter from 'typewriter-effect';
 
 export default function Home() {
+  
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className=" "> 
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <div className=" mx-auto p-4  pt-12  flex justify-center items-center ">
+    
+      <Image className="bg-cover rounded-full  w-52 h-52  border-4 border-transparent hover:border-teal-300 transition-all duration-300 " src="/mee.jpg" alt={"profile"} width={52} height={52}   unoptimized  />
+      </div>
+
+      <div className="font-semibold mx-auto p-8  w-full  ">
+      <h1 className="text-2xl">Hello, it's</h1>
+      
+      
+      <span className="font-semibold mx-auto w-full text-2xl hover:text-teal-300 transition-all duration-300 hover:cursor-pointer ">Abdul Mannan Fazlani</span>
+      
+      <div>
+        <h1 className="flex gap-2 mx-auto w-full ">
+        <span className="text-white">I am a</span>
+        <span className="text-teal-300">
+<Typewriter 
+  options={{
+    strings: ['Flutter App Developer', 'Web Developer' ,'TypeScript Developer' , 'C Developer' , 'C++ Developer' ],
+    autoStart: true,
+    loop: true,
+  }}
+/>
+</span>
+        </h1>
+      </div>
+
+<h4 className="text-xs pt-4 text-teal-300 mx-auto max-w-4xl">My short intro :</h4>
+      <div className="mx-auto text-xs max-w-4xl text-white p-2 ">
+  <p className="text-xs md:text-sm lg:text-base text-white leading-relaxed">
+    I specialize in designing and developing user-friendly, visually appealing web applications that enhance user experience. With a strong focus on intuitive interfaces and responsive designs, 
+    I aim to create solutions that not only meet the needs of users but also engage and captivate them. My expertise spans front-end and back-end development, ensuring seamless functionality and aesthetic appeal in every project I undertake.
+  </p>
+</div>
+
+
+      </div>
+
+
     </div>
   );
 }
