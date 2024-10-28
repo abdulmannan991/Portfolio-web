@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 import { useState } from "react";
-import Home from "../page";
+
 export default function Navbar() {
 const [menuopen , setmenuopen] = useState(false);
     return (
