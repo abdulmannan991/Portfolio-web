@@ -6,14 +6,18 @@ export default function Navbar() {
 const [menuopen , setmenuopen] = useState(false);
     return (
 
-    <div className="  fixed w-full">
+    <div className="sm:backdrop-blur-sm sm:bg-white/5   fixed w-full">
         
         <ul className="hidden md:flex justify-between  mr-4 p-4 mt-4 max-w-[850px]:hidden min-w-[851px]:flex ">
     <li className="hover:text-teal-300 ml-16 hover:cursor-pointer mx-auto ">My portfolio</li>
     <div className="flex space-x-4">
-        <li className="hover:text-teal-300"><Link href={"#Home"}>Home</Link></li>
-        <li className="hover:text-teal-300"><Link href={"#About"}>About</Link></li>
-        <li className="hover:text-teal-300"><Link href={"#Contact"}>Contact</Link></li>
+        <li className="hover:text-teal-300  hover:border-teal-900 hover:border-2 hover:rounded-xl p-1"><Link href={"#Home"}>Home</Link></li>
+        
+        <li className="hover:text-teal-300 hover:border-teal-900 hover:border-2 hover:rounded-xl p-1"><Link href={"#Skills"}>Skills</Link></li>
+
+        <li className="hover:text-teal-300 hover:border-teal-900 hover:border-2 hover:rounded-xl p-1"><Link href={"#Services"}>Services</Link></li>
+        
+        <li className="hover:text-teal-300 hover:border-teal-900 hover:border-2 hover:rounded-xl p-1"><Link href={"#Contact"}>Contact</Link></li>
         
     </div>
 </ul>
@@ -35,12 +39,18 @@ const [menuopen , setmenuopen] = useState(false);
 </Link>
 </li>
 <li className="relative group"> 
-<Link className="hover:text-teal-300 transition-colors duration-300" href={"#About"}>About
+<Link className="hover:text-teal-300 transition-colors duration-300" href={"#Skills"}>Skills
 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-teal-300 transition-all duration-300 group-hover:w-12"></span>
 </Link>
 </li>
 
 <li className="relative group"> 
+<Link className="hover:text-teal-300 transition-colors duration-300" href={"#Services"}>Setvices
+<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-teal-300 transition-all duration-300 group-hover:w-12"></span>
+</Link>
+</li>
+
+<li className="relative group "> 
 <Link className="hover:text-teal-300 transition-colors duration-300" href={"#Contact"}>Contact
 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-teal-300 transition-all duration-300 group-hover:w-16"></span>
 </Link>

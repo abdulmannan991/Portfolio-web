@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Typewriter from 'typewriter-effect';
 import Skills from "./Components/Skills";
+import Services from "./Components/Services";
 
 export default function Home() {
   const Linkdein = ()=>{
@@ -30,7 +31,7 @@ export default function Home() {
 
       <div className="flex flex-col items-center p-8 w-full md:flex-row md:items-start mt-14">
         <div className="flex-1 md:mr-4">
-          <h1 className="text-2xl md:mr-4 mb-4 md:mb-0 ">Hello, it's</h1>
+          <h1 id="Home" className="text-2xl md:mr-4 mb-4 md:mb-0 #Home">Hello, its</h1>
           <span className="font-semibold w-full text-2xl hover:text-teal-300 transition-all duration-300 hover:cursor-pointer">Abdul Mannan Fazlani</span>
 
           <div>
@@ -58,11 +59,11 @@ export default function Home() {
 
         <div className="md:flex-shrink-0 ">
           <Image 
-            className="hidden md:block bg-cover rounded-full w-52 h-52 border-4 border-transparent hover:border-teal-300 transition-all duration-300"
+            className="hidden md:block bg-cover rounded-full w-80 h-80 border-4 border-transparent hover:border-teal-300 transition-all duration-300"
             src="/mee.jpg" 
             alt={"profile"} 
-            width={52} 
-            height={52} 
+            width={80} 
+            height={80} 
             unoptimized 
           />
         </div>
@@ -91,6 +92,8 @@ export default function Home() {
       </div>
 
       <Skills/>
+      <br /><br />
+      <Services/>
 
       </div>
   );
