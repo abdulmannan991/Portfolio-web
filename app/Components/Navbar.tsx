@@ -6,7 +6,7 @@ export default function Navbar() {
 const [menuopen , setmenuopen] = useState(false);
     return (
 
-    <div className="bg-transparent fixed w-full">
+    <div className="  fixed w-full">
         
         <ul className="hidden md:flex justify-between  mr-4 p-4 mt-4 max-w-[850px]:hidden min-w-[851px]:flex ">
     <li className="hover:text-teal-300 ml-16 hover:cursor-pointer mx-auto ">My portfolio</li>
@@ -27,7 +27,7 @@ const [menuopen , setmenuopen] = useState(false);
 ☰
 </button>
 
-<ul className={`bg-transparent h-36 w-6/12 rounded-md bg-teal-300 bg-opacity-20 p-4 flex flex-col space-y-2 md:hidden ${menuopen ? "block" : "hidden" }`}>
+<ul className={` backdrop-blur-sm bg-white/5  h-36 w-1/3 rounded-md bg-teal-300 bg-opacity-20 p-4 flex flex-col space-y-2 md:hidden ${menuopen ? "block" : "hidden" }`}>
 
 <li className="relative group"> 
 <Link className="hover:text-teal-300 transition-colors duration-300" href={"#Home"}>Home
