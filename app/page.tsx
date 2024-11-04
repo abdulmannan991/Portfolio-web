@@ -3,6 +3,8 @@ import Image from "next/image";
 import Typewriter from 'typewriter-effect';
 import Skills from "./Components/Skills";
 import Services from "./Components/Services";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
 
 export default function Home() {
   const Linkdein = ()=>{
@@ -110,7 +112,8 @@ export default function Home() {
       <Skills/>
       <br /><br />
       <Services/>
-
+<Projects/>
+<Contact/>
       </div>
   );
 }
