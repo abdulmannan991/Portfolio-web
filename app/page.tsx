@@ -91,6 +91,22 @@ export default function Home() {
 
       </div>
 
+      <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 sm:ml-8  mb-6 p-4">
+  <a
+    href="/path/to/your-cv.pdf"
+    download="YourCV.pdf"
+    className="px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base text-white bg-gray-800 rounded-md transition-all duration-300 hover:bg-teal-300 hover:scale-105 w-36 sm:w-auto text-center"
+  >
+    Download CV
+  </a>
+  
+  <button className="px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base text-white bg-gray-800 rounded-md transition-all duration-300 hover:bg-teal-300 hover:scale-105 w-36 sm:w-auto">
+    Contact
+  </button>
+</div>
+
+
+
       <Skills/>
       <br /><br />
       <Services/>
