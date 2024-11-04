@@ -50,7 +50,7 @@ A fully responsive job portal website with a modern frontend using Tailwind CSS,
 
 
 <p className=" text-xs text-white leading-relaxed mt-8">
-    Web development functionality. ices. create  in engaging web experiences that effectively meet users' needs.
+    Web development functionality. ices. create  in engaging web experiences that effectively meet users needs.
   </p>
   <div className="flex justify-center mt-6 ml-8 sm:mr-8">
   <button onClick={Routing} className="px-6 py-2 bg-gray-800 text-white font-semibold rounded-md transition-transform duration-300 hover:bg-teal-300 hover:scale-105">
