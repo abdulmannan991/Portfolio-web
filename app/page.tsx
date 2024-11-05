@@ -5,6 +5,7 @@ import Skills from "./Components/Skills";
 import Services from "./Components/Services";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   const Linkdein = ()=>{
@@ -71,7 +72,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex space-x-4 mb-8 ml-10">
+      <div className="flex space-x-4 mb-8 ml-10 md:-mt-10">
       
       <button onClick={Linkdein} className="flex items-center justify-center w-12 h-12  border-2 border-teal-300 rounded-full hover:bg-teal-300 transition-all duration-300">
   <img src="/linkedin.png" alt="linkdein" className="h-6 w-6"/>
@@ -95,14 +96,15 @@ export default function Home() {
 
       <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 sm:ml-8  mb-6 p-4">
   <a
-    href="/path/to/your-cv.pdf"
-    download="YourCV.pdf"
+
+    href="#"
+    // download="YourCV.pdf"
     className="px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base text-white bg-gray-800 rounded-md transition-all duration-300 hover:bg-teal-300 hover:scale-105 w-36 sm:w-auto text-center"
   >
     Download CV
   </a>
   
-  <button className="px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base text-white bg-gray-800 rounded-md transition-all duration-300 hover:bg-teal-300 hover:scale-105 w-36 sm:w-auto">
+  <button id="Contact" className="px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base text-white bg-gray-800 rounded-md transition-all duration-300 hover:bg-teal-300 hover:scale-105 w-36 sm:w-auto">
     Contact
   </button>
 </div>
@@ -114,6 +116,7 @@ export default function Home() {
       <Services/>
 <Projects/>
 <Contact/>
+<Footer/>
       </div>
   );
 }
