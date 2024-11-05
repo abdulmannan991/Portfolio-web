@@ -8,7 +8,7 @@ export default function Services(){
 
 <div className="flex flex-wrap justify-center   mt-6 lg:grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center ">
 
-<div className=" sm:flex sm:justify-start bg-gray-800  justify-center w-64 rounded-lg mb-6 p-4 flex flex-col  ml-8 hover:bg-teal-300 transition-all hover:scale-110 duration-300 group">
+<div className=" sm:flex sm:justify-start bg-gray-800  justify-center w-64 rounded-lg mb-6 p-4 flex flex-col  ml-8 hover:bg-teal-300 transition-all hover:scale-110 duration-700 group">
 <h1 className=" mb-4 text-white  font-serif -tracking-tight text-xl font-bold   md:text-4xl    w-auto flex justify-center group-hover:text-black">
    Flutter
 </h1>
@@ -19,7 +19,7 @@ export default function Services(){
 
 </div>
 
-<div className="sm:flex sm:justify-end bg-gray-800  w-64 rounded-lg mb-6 p-4 flex flex-wrap  ml-8 hover:bg-teal-300 transition-all hover:scale-110 duration-300 group">
+<div className="sm:flex sm:justify-end bg-gray-800  w-64 rounded-lg mb-6 p-4 flex flex-wrap  ml-8 hover:bg-teal-300 transition-all hover:scale-110 duration-700 group">
 <h1 className=" mb-4 text-white font-serif -tracking-tight text-xl font-bold   md:text-4xl    w-auto flex justify-center group-hover:text-black">
    Web Developer
 </h1>
@@ -29,7 +29,7 @@ export default function Services(){
   </p>
 </div>
 
-<div className="sm:flex sm:justify-start bg-gray-800  w-64 rounded-lg mb-6 p-4 flex flex-wrap  ml-8 hover:bg-teal-300 transition-all hover:scale-110 duration-300 group">
+<div className="sm:flex sm:justify-start bg-gray-800  w-64 rounded-lg mb-6 p-4 flex flex-wrap  ml-8 hover:bg-teal-300 transition-all hover:scale-110 duration-700 group">
 <h1 className=" mb-4 text-white font-serif -tracking-tight text-xl font-bold   md:text-4xl    w-auto flex justify-center group-hover:text-black">
    TypeScript
 </h1>
@@ -38,7 +38,7 @@ export default function Services(){
   </p>
 </div>
 
-<div className="sm:flex sm:justify-center bg-gray-800  w-64 rounded-lg mb-6 p-4 flex flex-wrap  ml-8 hover:bg-teal-300 transition-all hover:scale-110 duration-300 group">
+<div className="sm:flex sm:justify-center bg-gray-800  w-64 rounded-lg mb-6 p-4 flex flex-wrap  ml-8 hover:bg-teal-300 transition-all hover:scale-110 duration-700 group">
 
 <h1 className=" mb-4 text-white font-serif -tracking-tight text-xl font-bold   md:text-4xl  w-auto flex justify-center group-hover:text-black">
    C++ 

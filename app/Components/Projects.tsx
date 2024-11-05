@@ -17,7 +17,7 @@ export default function Projects(){
 </div>
 <div className="lg:space-x-40 flex flex-wrap justify-center  mt-10 gap-4 sm:space-x-8">
 
-<div className="sm:flex sm:justify-start bg-gray-800  border-gray-800  justify-center w-64 rounded-lg mb-6 p-4 flex flex-col   hover:border-teal-300 border-2 transition-all hover:scale-110 duration-300">
+<div className="sm:flex sm:justify-start bg-gray-800  border-gray-800  justify-center w-64 rounded-lg mb-6 p-4 flex flex-col   hover:border-teal-300 border-2 transition-all hover:scale-110 duration-1000">
 <h1 className=" mb-4 text-white font-serif -tracking-tight text-xl font-bold   md:text-4xl    w-auto flex justify-center ">
    Job Portal
 </h1>
@@ -39,7 +39,7 @@ A fully responsive job portal website with a modern frontend using Tailwind CSS,
 
 </div>
 
-<div className="sm:flex sm:justify-end bg-gray-800 border-gray-800 w-64 rounded-lg mb-6 p-4 flex flex-wrap   hover:border-teal-300 border-2 transition-all hover:scale-110 duration-300">
+<div className="sm:flex sm:justify-end bg-gray-800 border-gray-800 w-64 rounded-lg mb-6 p-4 flex flex-wrap   hover:border-teal-300 border-2 transition-all hover:scale-110 duration-1000">
 <h1 className=" mb-4 ml-14 sm:mr-14 text-white font-serif -tracking-tight text-xl font-bold   md:text-4xl mr-8   w-auto flex justify-center ">
    Routing
 </h1>
@@ -64,3 +64,4 @@ A fully responsive job portal website with a modern frontend using Tailwind CSS,
 </div>
     );
 }
+// Completed
