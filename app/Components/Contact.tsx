@@ -12,7 +12,7 @@ export default function Contact(){
 
 <div className="flex justify-center items-center p-6 ">
 
-<fieldset className="border-2 border-teal-300 p-6 w-72 sm:w-80 md:w-2/5">
+<fieldset className="border-2 border-teal-300 p-6 sm:p-12 w-72 sm:w-80 md:w-2/5 ">
     <legend className="font-serif font-bold text-teal-300 text-xl sm:text-2xl">
         Your Info
     </legend>
