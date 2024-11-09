@@ -21,7 +21,7 @@ export default function Services(){
   <div className="flex flex-wrap lg:flex-row lg:justify-between justify-center p-4 space-x-4">
 
   <div className=" bg-gray-800 w-64 lg:w-96 lg:mt-64 lg:mr-48 h-80  rounded-lg mb-6 p-4 flex flex-col  hover:bg-teal-300 transition-all hover:scale-110 duration-700 group">
-    <h1 className=" flex justify-center mb-4 text-white font-serif -tracking-tight text-xl font-bold  text-center sm:text-left group-hover:text-black">
+    <h1 className="lg:text-4xl flex justify-center mb-4 text-white font-serif -tracking-tight text-xl font-bold  text-center sm:text-left group-hover:text-black">
       Web Developer
     </h1>
     <p className="lg:text-base text-xs text-white leading-relaxed group-hover:text-black">
