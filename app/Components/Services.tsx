@@ -25,7 +25,7 @@ export default function Services(){
       Web Developer
     </h1>
     <p className="lg:text-base text-xs text-white leading-relaxed group-hover:text-black">
-      Web development involves creating dynamic and interactive websites using HTML for structure, CSS for styling, and JavaScript for functionality. HTML provides the foundational layout, while CSS enhances visual appeal and responsiveness across devices. JavaScript enables developers to add interactivity, create animations, and handle user input, resulting in engaging web experiences that effectively meet users' needs .
+      Web development involves creating dynamic and interactive websites using HTML for structure, CSS for styling, and JavaScript for functionality. HTML provides the foundational layout, while CSS enhances visual appeal and responsiveness across devices. JavaScript enables developers to add interactivity, create animations, and handle user input, resulting in engaging web experiences that effectively meet users needs .
     </p>
   </div>
   </div>
