@@ -7,20 +7,36 @@ export default function Services(){
    Services
 </h1>
 
-<div className="flex flex-wrap lg:flex-row lg:justify-between justify-center p-4 space-x-4">
-
-  <div className="lg:ml-24 lg:justify-start sm:h-80 mt-4 lg:mt-10 bg-gray-800 lg:mb-64 lg:p-4   w-64 lg:w-96 rounded-lg mb-6 p-4 flex flex-col hover:bg-teal-300 transition-all hover:scale-110 duration-700 group">
-    <h1 className="flex justify-center mb-4 text-white font-serif -tracking-tight text-xl font-bold md:text-4xl text-center sm:text-left group-hover:text-black">
-      Flutter
-    </h1>
-    <p className="text-xs lg:text-base text-white leading-relaxed group-hover:text-black">
-      Flutter allows for fast development of natively compiled applications for mobile, web, and desktop from a single codebase, providing rich, expressive UI capabilities. With its hot-reload feature, developers can quickly iterate on changes, making it ideal for rapid prototyping. Additionally, Flutter’s extensive widget library enables high-performance custom UI elements, ensuring consistent appearance across devices.
-    </p>
+<div className="flex  flex-wrap lg:flex-row lg:justify-between  justify-center  space-x-4">
+<div className="lg:ml-24 lg:justify-start sm:h-80 mt-4 bg-gray-800 w-64 lg:w-96 rounded-lg mb-6 p-4 flex flex-col hover:bg-teal-300 transition-all hover:scale-110 duration-700 group relative">
+  {/* Line with Circle Effect */}
+  <div className="absolute top-1/2 right-[-100px] h-[2px] bg-teal-300 w-0 lg:group-hover:w-[100px] transition-all duration-700 transform -translate-y-1/2">
+    {/* Circle at the End of Line */}
+    <div className="absolute h-4 w-4 bg-teal-300 rounded-full top-1/2 right-[-8px] opacity-0 lg:group-hover:opacity-100 transition-all duration-700 transform -translate-y-1/2"></div>
   </div>
+  
+  
+  <h1 className="flex justify-center mb-4 text-white font-serif  -tracking-tight text-xl font-bold md:text-4xl text-center sm:text-left group-hover:text-black">
+    Flutter
+  </h1>
+  <p className="text-xs lg:text-base text-white leading-relaxed group-hover:text-black">
+    Flutter allows for fast development of natively compiled applications for mobile, web, and desktop from a single codebase, providing rich, expressive UI capabilities. With its hot-reload feature, developers can quickly iterate on changes, making it ideal for rapid prototyping. Additionally, Flutters extensive widget library enables high-performance custom UI elements, ensuring consistent appearance across devices.
+  </p>
+</div>
 
-  <div className="flex flex-wrap lg:flex-row lg:justify-between justify-center p-4 space-x-4">
 
+  <div className="flex flex-wrap lg:flex-row lg:justify-between justify-center  space-x-4">
+
+ 
   <div className=" bg-gray-800 w-64 lg:w-96 lg:mt-64 lg:mr-48 h-80  rounded-lg mb-6 p-4 flex flex-col  hover:bg-teal-300 transition-all hover:scale-110 duration-700 group">
+ 
+ {/* Line with Circle Effect */}
+ <div className="absolute top-1/2 left-[-100px] h-[2px] bg-teal-300 w-0 lg:group-hover:w-[100px] transition-all duration-700 transform -translate-y-1/2">
+    {/* Circle at the End of Line */}
+    <div className="absolute h-4 w-4 bg-teal-300 rounded-full top-1/2 left-[-8px] opacity-0 lg:group-hover:opacity-100 transition-all duration-700 transform -translate-y-1/2"></div>
+  </div>
+  
+ 
     <h1 className="lg:text-4xl flex justify-center mb-4 text-white font-serif -tracking-tight text-xl font-bold  text-center sm:text-left group-hover:text-black">
       Web Developer
     </h1>
@@ -35,6 +51,11 @@ export default function Services(){
 <div className="flex flex-wrap lg:flex-row lg:justify-between justify-center space-x-4">
 
   <div className="lg:w-96 bg-gray-800 w-64 rounded-lg  lg:mb-64 lg:p-4 lg:ml-24 mb-6 p-4 flex flex-col  hover:bg-teal-300 transition-all hover:scale-110 duration-700 group">
+   
+  <div className="absolute top-1/2 right-[-100px] h-[2px] bg-teal-300 w-0 lg:group-hover:w-[100px] transition-all duration-700 transform -translate-y-1/2">
+    {/* Circle at the End of Line */}
+    <div className="absolute h-4 w-4 bg-teal-300 rounded-full top-1/2 right-[-8px] opacity-0 lg:group-hover:opacity-100 transition-all duration-700 transform -translate-y-1/2"></div>
+  </div>
     <h1 className="flex justify-center mb-4 text-white font-serif -tracking-tight text-xl font-bold md:text-4xl text-center sm:text-left group-hover:text-black">
       TypeScript
     </h1>
@@ -43,8 +64,15 @@ export default function Services(){
     </p>
   </div>
 
-  <div className="flex flex-wrap lg:flex-row lg:justify-between justify-center space-x-4">
+  <div className="flex flex-wrap lg:flex-row lg:justify-between justify-center  space-x-4">
   <div className="lg:w-96 bg-gray-800 w-64 lg:mt-56 lg:mr-48  rounded-lg mb-6 p-4 flex flex-col  hover:bg-teal-300 transition-all hover:scale-110 duration-700 group">
+  
+   {/* Line with Circle Effect */}
+ <div className="absolute top-1/2 left-[-100px] h-[2px] bg-teal-300 w-0 lg:group-hover:w-[100px] transition-all duration-700 transform -translate-y-1/2">
+    {/* Circle at the End of Line */}
+    <div className="absolute h-4 w-4 bg-teal-300 rounded-full top-1/2 left-[-8px] opacity-0 lg:group-hover:opacity-100 transition-all duration-700 transform -translate-y-1/2"></div>
+  </div>
+
     <h1 className="flex justify-center mb-4 text-white font-serif -tracking-tight text-xl font-bold md:text-4xl text-center sm:text-left group-hover:text-black">
       C++
     </h1>
