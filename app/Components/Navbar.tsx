@@ -6,7 +6,7 @@ export default function Navbar() {
 const [menuopen , setmenuopen] = useState(false);
     return (
 
-    <div className="md:backdrop-blur-sm md:bg-white/5   fixed w-full">
+    <div className="md:backdrop-blur-sm md:bg-white/5   fixed w-full ">
         
         <ul className="hidden md:flex justify-between  mr-4 p-4 mt-4 max-w-[850px]:hidden min-w-[851px]:flex ">
     <li className="hover:text-teal-300 ml-16 hover:cursor-pointer mx-auto ">My portfolio</li>

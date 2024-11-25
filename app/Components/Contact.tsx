@@ -1,7 +1,7 @@
 
 export default function Contact(){
     return(
-        <div>
+        <div >
       <div >
 <h1 id="Contactme" className=" mb-4 mt-10 text-white font-serif -tracking-tight text-2xl font-bold   md:text-4xl    w-auto flex justify-center">
    Contact Me

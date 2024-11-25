@@ -2,10 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* globals.css */
+
+/* Prevent overflow */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal overflow from long words */
+body {
+  overflow-wrap: break-word;
+}
+
+/* Ensure images and media content do not exceed their containers */
+img, video {
+  max-width: 100%;
+}
+
+/* Example for container with flex */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {

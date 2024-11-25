@@ -8,7 +8,7 @@ export default function Projects(){
         window.open("https://dynamic-routes-components-swart.vercel.app/country","_blank","noopener,noreferrer");
     }
     return(
-        <div>
+        <div >
 
         <div>
 <h1 id="Projects" className=" mb-4 mt-10 text-white font-serif -tracking-tight text-2xl font-bold   md:text-4xl    w-auto flex justify-center">

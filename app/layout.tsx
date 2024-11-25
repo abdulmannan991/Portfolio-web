@@ -1,6 +1,14 @@
+
+
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
+// import { Roboto } from 'next/font/google';
+
+// const roboto = Roboto({
+//   subsets: ['latin'],
+//   weight: ['400', '700'],
+// });
 
 
 
@@ -16,9 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body 
-        className="bg-slate-900 text-white"
-      >
+   <body className="bg-slate-900 text-white overflow-x-hidden">
+        
       <Navbar/>
         <br />
         {children}

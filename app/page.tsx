@@ -7,6 +7,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
+
 export default function Home() {
   const Linkdein = ()=>{
     window.open("https://www.linkedin.com/in/abdul-mannan-47b274293/","_blank","noopener,noreferrer");
