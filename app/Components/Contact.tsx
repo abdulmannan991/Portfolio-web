@@ -1,5 +1,8 @@
+import useScrollAnimation from '../Components/animation'; 
 
 export default function Contact(){
+  const hasAnimated = useScrollAnimation('Contact-section'); 
+
     return(
         <div >
       <div >
@@ -9,6 +12,13 @@ export default function Contact(){
 </h1>    
 
 </div>
+<div
+        id="Contact-section"
+        className={`transition-all duration-700 ease-in-out transform ${
+          hasAnimated ? 'scale-100 translate-y-0 opacity-100' : 'scale-90 translate-y-10 opacity-0'
+        }`}
+      >
+
 
 <div className="flex justify-center items-center p-6 ">
 
@@ -60,6 +70,7 @@ export default function Contact(){
 </fieldset>
 </div>
 
+        </div>
         </div>
     );
 }

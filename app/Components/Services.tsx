@@ -1,12 +1,23 @@
+
+import useScrollAnimation from '../Components/animation'; 
 export default function Services(){
+  const hasAnimated = useScrollAnimation('Services-section'); 
+
     return(
       
       
 <div>
+  
 <h1 id="Services" className=" mb-4 text-white font-serif -tracking-tight text-2xl font-bold   md:text-4xl    w-auto flex justify-center">
    Services
 </h1>
 
+<div
+        id="Services-section"
+        className={`transition-all duration-700 ease-in-out transform ${
+          hasAnimated ? 'scale-100 translate-y-0 opacity-100' : 'scale-90 translate-y-10 opacity-0'
+        }`}
+      >
 <div className="flex  flex-wrap lg:flex-row lg:justify-between  justify-center  space-x-4">
 
 
@@ -82,6 +93,7 @@ export default function Services(){
       C++ is a powerful, high-performance programming language that supports object-oriented programming, enabling developers to create complex systems and applications. With its rich library support and low-level memory manipulation capabilities, C++ is widely used in system programming, game development, and applications requiring real-time processing. Its versatility makes it an essential language for both beginners and experienced developers.
     </p>
   </div>
+</div>
 </div>
 </div>
 </div>

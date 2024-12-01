@@ -1,12 +1,20 @@
+import useScrollAnimation from '../Components/animation'; 
 
 
 export default function Skills(){
-    return(
+  const hasAnimated = useScrollAnimation('skills-section'); 
+  return(
+
         <div>
             <h1 id="Skills" className=" mb-4 text-white font-serif -tracking-tight text-2xl font-bold   md:text-4xl    w-auto flex justify-center">
                 Skills
             </h1>
-
+            <div
+        id="skills-section"
+        className={`transition-all duration-700 ease-in-out transform ${
+          hasAnimated ? 'scale-100 translate-y-0 opacity-100' : 'scale-90 translate-y-10 opacity-0'
+        }`}
+      >
             <div>
                 <h1 className="text-white font-serif p-4 ml-2 -tracking-tight text-xl flex justify-start sm:flex sm:justify-center ">
                     Flutter
@@ -98,6 +106,7 @@ export default function Skills(){
   </div>
   </div>
 
+        </div>
             </div>
         
     );

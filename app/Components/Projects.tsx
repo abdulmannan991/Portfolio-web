@@ -1,5 +1,7 @@
+import useScrollAnimation from '../Components/animation'; 
 import Image from "next/image";
 export default function Projects(){
+  const hasAnimated = useScrollAnimation('Project-section'); 
     const Jobportal = ()=>{
         window.open("https://job-portal-web-eosin.vercel.app/","_blank","noopener,noreferrer");
     }
@@ -15,6 +17,15 @@ export default function Projects(){
    Projects
 </h1>    
 </div>
+
+<div
+        id="Project-section"
+        className={`transition-all duration-700 ease-in-out transform ${
+          hasAnimated ? 'scale-100 translate-y-0 opacity-100' : 'scale-90 translate-y-10 opacity-0'
+        }`}
+      >
+
+
 <div className="lg:space-x-40 flex flex-wrap justify-center  mt-10 gap-4 sm:space-x-8">
 
 <div className="sm:flex sm:justify-start bg-gray-800  border-gray-800  justify-center w-64 rounded-lg mb-6 p-4 flex flex-col   hover:border-teal-300 border-2 transition-all hover:scale-110 duration-1000">
@@ -60,6 +71,7 @@ A fully responsive job portal website with a modern frontend using Tailwind CSS,
 
 </div>
 
+</div>
 </div>
 </div>
     );
