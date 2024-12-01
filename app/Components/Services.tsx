@@ -56,6 +56,7 @@ export default function Services(){
     {/* Circle at the End of Line */}
     <div className="absolute h-4 w-4 bg-teal-300 rounded-full top-1/2 right-[-8px] opacity-0 lg:group-hover:opacity-100 transition-all duration-700 transform -translate-y-1/2"></div>
   </div>
+  
     <h1 className="flex justify-center mb-4 text-white font-serif -tracking-tight text-xl font-bold md:text-4xl text-center sm:text-left group-hover:text-black">
       TypeScript
     </h1>

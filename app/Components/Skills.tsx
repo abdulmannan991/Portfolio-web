@@ -12,14 +12,17 @@ export default function Skills(){
                     Flutter
                 </h1>
 
-                <div className="w-auto">
-  <h1 className="mr-6 flex justify-end sm:mr-80">90%</h1> 
-</div>
-                <div className="relative group mb-4 bg-gray-300 w-11/12 rounded-2xl h-[8px] ml-4 sm:mx-auto sm:w-3/6">
-  <div className=" mt-6 rounded-2xl mb-4 bg-white h-[8px] w-2 transition-all duration-300 group-hover:w-11/12 group-hover:bg-teal-300  "></div>
-</div>
+                <div className="relative w-11/12 sm:w-3/6 mx-auto">
+  {/* Progress Bar */}
+  <div className="bg-gray-300 rounded-2xl h-[8px] w-full relative">
+    {/* Filled portion of the bar */}
+    <div className="bg-teal-300 rounded-2xl h-full w-[90%]"></div>
 
-         </div>
+    {/* Percentage Label */}
+    <h1 className="absolute top-[-340%] right-0 text-white text-sm">90%</h1>
+  </div>
+  </div>
+  </div>
 
 
          
@@ -28,31 +31,54 @@ export default function Skills(){
                     TypeScript
                 </h1>
 
-                <div className="w-auto">
-  <h1 className="mr-6 flex justify-end sm:mr-80">85%</h1> 
-</div>
-                <div className="relative group mb-4 bg-gray-300 w-11/12 rounded-2xl h-[8px] ml-4 sm:mx-auto sm:w-3/6">
-  <div className=" mt-6 rounded-2xl mb-4 bg-white h-[8px] w-2 transition-all duration-300 group-hover:w-10/12 group-hover:bg-teal-300  "></div>
-</div>
+                <div className="relative w-11/12 sm:w-3/6 mx-auto">
+  {/* Progress Bar */}
+  <div className="bg-gray-300 rounded-2xl h-[8px] w-full relative">
+    {/* Filled portion of the bar */}
+    <div className="bg-teal-300 rounded-2xl h-full w-[90%]"></div>
 
-         </div>
+    {/* Percentage Label */}
+    <h1 className="absolute top-[-340%] right-0 text-white text-sm">90%</h1>
+  </div>
+  </div>
+  </div>
 
+  <div>
+                <h1 className="text-white font-serif p-4 ml-2 -tracking-tight text-xl flex justify-start sm:flex sm:justify-center ">
+                   Next-JS
+                </h1>
+
+                <div className="relative w-11/12 sm:w-3/6 mx-auto">
+  {/* Progress Bar */}
+  <div className="bg-gray-300 rounded-2xl h-[8px] w-full relative">
+    {/* Filled portion of the bar */}
+    <div className="bg-teal-300 rounded-2xl h-full w-[75%]"></div>
+
+    {/* Percentage Label */}
+    <h1 className="absolute top-[-340%] right-0 text-white text-sm">75%</h1>
+  </div>
+  </div>
+  </div>
 
          
+ 
+
          <div>
                 <h1 className="text-white font-serif p-4 ml-2 -tracking-tight text-xl flex justify-start sm:flex sm:justify-center ">
                     C
                 </h1>
 
-                <div className="w-auto">
-  <h1 className="mr-6 flex justify-end sm:mr-80">90%</h1> 
-</div>
-                <div className="relative group mb-4 bg-gray-300 w-11/12 rounded-2xl h-[8px] ml-4 sm:mx-auto sm:w-3/6">
-  <div className=" mt-6 rounded-2xl mb-4 bg-white h-[8px] w-2 transition-all duration-300 group-hover:w-10/12 group-hover:bg-teal-300  "></div>
-</div>
+                <div className="relative w-11/12 sm:w-3/6 mx-auto">
+  {/* Progress Bar */}
+  <div className="bg-gray-300 rounded-2xl h-[8px] w-full relative">
+    {/* Filled portion of the bar */}
+    <div className="bg-teal-300 rounded-2xl h-full w-[80%]"></div>
 
-         </div>
-
+    {/* Percentage Label */}
+    <h1 className="absolute top-[-340%] right-0 text-white text-sm">80%</h1>
+  </div>
+  </div>
+  </div>
 
          
          <div>
@@ -60,15 +86,17 @@ export default function Skills(){
                     C++
                 </h1>
 
-                <div className="w-auto">
-  <h1 className="mr-6 flex justify-end sm:mr-80">95%</h1> 
-</div>
-                <div className="relative group mb-4 bg-gray-300 w-11/12 rounded-2xl h-[8px] ml-4 sm:mx-auto sm:w-3/6">
-  <div className=" mt-6 rounded-2xl mb-4 bg-white h-[8px] w-2 transition-all duration-300 group-hover:w-11/12 group-hover:bg-teal-300  "></div>
-</div>
+                <div className="relative w-11/12 sm:w-3/6 mx-auto">
+  {/* Progress Bar */}
+  <div className="bg-gray-300 rounded-2xl h-[8px] w-full relative">
+    {/* Filled portion of the bar */}
+    <div className="bg-teal-300 rounded-2xl h-full w-[85%]"></div>
 
-         </div>
-
+    {/* Percentage Label */}
+    <h1 className="absolute top-[-340%] right-0 text-white text-sm">85%</h1>
+  </div>
+  </div>
+  </div>
 
             </div>
         
