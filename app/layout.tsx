@@ -24,9 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-   <body className="bg-slate-900 text-white overflow-x-hidden">
+   <body className="bg-slate-900 text-white overflow-x-clip">
         
-      <Navbar/>
+     <Navbar/>
         <br />
         {children}
     

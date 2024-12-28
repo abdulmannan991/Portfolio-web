@@ -6,7 +6,7 @@ export default function Contact(){
     return(
         <div >
       <div >
-<h1 id="Contactme" className=" mb-4 mt-10 text-white font-serif -tracking-tight text-2xl font-bold   md:text-4xl    w-auto flex justify-center">
+<h1  id="Projectss"   className=" mb-4 mt-10 text-white font-serif -tracking-tight text-2xl font-bold   md:text-4xl    w-auto flex justify-center">
    Contact Me
 
 </h1>    
@@ -22,7 +22,7 @@ export default function Contact(){
 
 <div className="flex justify-center items-center p-6 ">
 
-<fieldset className="border-2 border-teal-300 p-6 sm:p-12 w-72 sm:w-80 md:w-2/5 ">
+<fieldset  className="border-2 border-teal-300 p-6 sm:p-12 w-72 sm:w-80 md:w-2/5 ">
     <legend className="font-serif font-bold text-teal-300 text-xl sm:text-2xl">
         Your Info
     </legend>

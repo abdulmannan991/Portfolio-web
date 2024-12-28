@@ -3,70 +3,136 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
-const [menuopen , setmenuopen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
     return (
 
-    <div className="md:backdrop-blur-sm md:bg-white/5   fixed w-full ">
-        
-        <ul className="hidden md:flex justify-between  mr-4 p-4 mt-4 max-w-[850px]:hidden min-w-[851px]:flex ">
-    <li className="hover:text-teal-300 ml-16 hover:cursor-pointer mx-auto ">My portfolio</li>
-    <div className="flex space-x-4">
-        <li className="hover:text-teal-300  hover:border-teal-900 hover:border-2 hover:rounded-xl p-1"><Link href={"#Home"}>Home</Link></li>
-        
-        <li className="hover:text-teal-300 hover:border-teal-900 hover:border-2 hover:rounded-xl p-1"><Link href={"#Skills"}>Skills</Link></li>
+<nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-gradient-to-r from-black/50 via-black/30 to-black/50 shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <div className="text-teal-400 text-2xl font-extrabold tracking-wide cursor-pointer hover:text-teal-200 transition">
+            Abdul Mannan
+          </div>
 
-        <li className="hover:text-teal-300 hover:border-teal-900 hover:border-2 hover:rounded-xl p-1"><Link href={"#Services"}>Services</Link></li>
-        <li className="hover:text-teal-300 hover:border-teal-900 hover:border-2 hover:rounded-xl p-1"><Link href={"#Projects"}>Projects</Link></li>
-        
-        <li className="hover:text-teal-300 hover:border-teal-900 hover:border-2 hover:rounded-xl p-1"><Link href={"#Contactme"}>Contact</Link></li>
-        
-    </div>
-</ul>
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-6">
+            <Link
+              href="#Home"
+              className="text-white hover:text-teal-300 transition-all duration-300 hover:underline hover:underline-offset-4"
+            >
+              Home
+            </Link>
+            <Link
+              href="#Skills"
+              className="text-white hover:text-teal-300 transition-all duration-300 hover:underline hover:underline-offset-4"
+            >
+              Skills
+            </Link>
+            <Link
+              href="#Services"
+              className="text-white hover:text-teal-300 transition-all duration-300 hover:underline hover:underline-offset-4"
+            >
+              Services
+            </Link>
+            <Link
+              href="#Projects"
+              className="text-white hover:text-teal-300 transition-all duration-300 hover:underline hover:underline-offset-4"
+            >
+              Projects
+            </Link>
 
-<h1>
-
-</h1>
-    
-    {/* Mobile menu  */}
-<button className="md:hidden p-4" onClick={()=>setmenuopen(!menuopen)}>
-☰
-</button>
-
-<ul className={` backdrop-blur-sm bg-white/5  h-44 w-1/3 rounded-md bg-teal-300 bg-opacity-20 p-4 flex flex-col space-y-2 md:hidden ${menuopen ? "block" : "hidden" }`}>
-
-<li className="relative group"> 
-<Link className="hover:text-teal-300 transition-colors duration-300" href={"#Home"}>Home
-<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-teal-300 transition-all duration-300 group-hover:w-12"></span>
+            <Link
+  href="#Projectss"
+  className="block text-white hover:text-teal-300 transition-all duration-300"
+  onClick={() => setMenuOpen(false)}
+>
+  Contact
 </Link>
-</li>
-<li className="relative group"> 
-<Link className="hover:text-teal-300 transition-colors duration-300" href={"#Skills"}>Skills
-<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-teal-300 transition-all duration-300 group-hover:w-12"></span>
+
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button
+              className="text-white focus:outline-none"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+                
+              {menuOpen ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 9h16.5M3.75 15h16.5"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <div className="absolute top-16 right-4 bg-black/60 rounded-lg shadow-lg p-4 space-y-4 md:hidden animate-slide-down">
+            <Link
+              href="#Home"
+              className="block text-white hover:text-teal-300 transition-all duration-300"
+            >
+              Home
+            </Link>
+            <Link
+              href="#Skills"
+              className="block text-white hover:text-teal-300 transition-all duration-300"
+            >
+              Skills
+            </Link>
+            <Link
+              href="#Services"
+              className="block text-white hover:text-teal-300 transition-all duration-300"
+            >
+              Services
+            </Link>
+            <Link
+              href="#Projects"
+              className="block text-white hover:text-teal-300 transition-all duration-300"
+            >
+              Projects
+            </Link>
+            <Link
+  href="#Projectss"
+  className="block text-white hover:text-teal-300 transition-all duration-300"
+  onClick={() => setMenuOpen(false)}
+>
+  Contact
 </Link>
-</li>
 
-<li className="relative group"> 
-<Link className="hover:text-teal-300 transition-colors duration-300" href={"#Services"}>Services
-<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-teal-300 transition-all duration-300 group-hover:w-12"></span>
-</Link>
-</li>
-
-
-<li className="relative group"> 
-<Link className="hover:text-teal-300 transition-colors duration-300" href={"#Projects"}>Projects
-<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-teal-300 transition-all duration-300 group-hover:w-12"></span>
-</Link>
-</li>
-
-
-<li className="relative group "> 
-<Link className="hover:text-teal-300 transition-colors duration-300" href={"#Contactme"}>Contact
-<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-teal-300 transition-all duration-300 group-hover:w-16"></span>
-</Link>
-</li>
-</ul>
-
-    </div>
+          </div>
+        )}
+      </div>
+    </nav>
     
 
   );
